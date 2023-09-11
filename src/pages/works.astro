@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+const pageTitle = "Proyectos";
+---
+<Layout pageTitle={pageTitle}>
+    <div class="gif">
+        <img width="300" height="259" alt="RaccoonLaptopGif" src="/gondo.gif"/>
+    </div>
+    <h2>Ultimos Proyectos</h2>
+    <ul role="list" class="link-card-grid">
+        <Card
+            href="https://datasur.neuquen.gov.ar/"
+            image="/GitHub.webp"
+            title="Data SUR"
+            body="Plataforma de visualización de datos de la provincia de Neuquén."
+            technologies={["NextJs", "React", "NestJs", "Material UI", "Axios", "Framer Motion"]}
+        />
+        <Card
+            href="https://nyara.com.ar/"
+            image="/GitHub.webp"
+            title="NYARA"
+            body="Aplicación PWA para el Prode del Mundial 2022. Permite hacer predicciones de partidos, competir con amigos y obtener el mayor puntaje."
+            technologies={["React", "React Router", "Material UI", "Axios", "Formik", "Yup", "LocalStorage", "Strapi"]}
+        />
+        <Card
+            href="https://cercatuyo.neuquen.gov.ar/"
+            image="/GitHub.webp"
+            title="CERCA TUYO"
+            body="Aplicativo web para que la ciudadanía acceda a los organismos de provincia que se encuentran cerca de su ubicación actual, respondiendo a la demanda de asistencia."
+            technologies={["React", "React Router", "Material UI", "Formik", "Axios", "LocalStorage", "Google Maps API"]}
+        />
+        <Card
+            href="https://github.com/ignacioaortiz/e-sport-shop---Ortiz"
+            image="/GitHub.webp"
+            title="E-SPORTS SHOP"
+            body="Un sitio de comercio electrónico con enfoque en la experiencia móvil, diseñado como trabajo final del curso de ReactJS en Coderhouse"
+            technologies={["React", "React Router", "React Context", "Tailwindcss", "DaisyUI", "Firebase"]}
+        />
+    </ul>
+</Layout>

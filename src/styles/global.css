@@ -1,0 +1,156 @@
+/* Import fonts */
+@font-face {
+  font-family: 'Pacifico';
+  src: url('/fonts/Pacifico-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/fonts/JosefinSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global styles */
+html {
+  background-color: #0f132e;
+  color: #eac195;
+}
+
+body {
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Headings */
+h1,
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.6em;
+  margin: 0;
+}
+
+h2 {
+  text-decoration: underline #375a7f;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+  font-size: 2.1em;
+  margin-bottom: 0;
+}
+
+/* Paragraphs */
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1em;
+  hyphens: auto;
+  line-height: 1.5;
+  text-indent: 1em;
+}
+
+/* Gifs */
+.gif {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0.8rem;
+}
+
+.title-link,
+.nav-links {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.3rem;
+}
+
+.title-link a,
+.nav-links a {
+  color: #eac195;
+  text-decoration: none;
+}
+
+.title-link a:hover,
+.nav-links a:hover,
+a:focus {
+  text-decoration: underline #375a7f;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.nav-links {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+.nav-links a {
+  margin: 0 13px;
+}
+
+/* Card listing */
+.link-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+  gap: 1rem;
+  padding: 0;
+}
+
+/* Theme Icon */
+html.light {
+  background-color: #eac195;
+  color: #0f132e;
+}
+
+.light .title-link a {
+  color: #0f132e;
+}
+
+.light .card-title {
+  color: #0f132e;
+}
+
+.light .card-txt {
+  color: #0f132e;
+}
+
+.light .nav-links a {
+  color: #0f132e;
+}
+
+.light .link-card > a {
+  color: #0f132e;
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 320px;
+  }
+
+  .nav-bar {
+    display: initial;
+  }
+
+  .title-link {
+    text-align: center;
+  }
+
+  .nav-links {
+    text-align: center;
+  }
+
+  .nav-links a {
+    margin: 0 11px;
+  }
+}
